@@ -1,0 +1,18 @@
+[
+    {
+        "name": "COMP 256",
+        "prerequisites": [["COMP 182", "COMP 182L", "MATH 150A", "PHIL 230"]],
+        "corequisite": [],
+        "elective": false,
+        "units": 3,
+        "alias:": []
+    },
+    {
+        "name": "COMP 256L",
+        "prerequisites": [],
+        "corequisite": [],
+        "elective": false,
+        "units": 1,
+        "alias": []
+    }
+]

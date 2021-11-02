@@ -1,0 +1,10 @@
+[
+    {
+        "name": "COMP 620",
+        "prerequisites": [["COMP 322", "COMP 322L", "COMP 380", "COMP 380L"]],
+        "corequisite": [],
+        "elective": false,
+        "units": 3,
+        "alias:": []
+    }
+]

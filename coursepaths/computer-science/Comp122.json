@@ -1,0 +1,18 @@
+[
+    {
+        "name": "COMP 122",
+        "prerequisites": [["COMP 110", "COMP 110L", "MATH 102"], ["COMP 110", "COMP 110L", "MATH 103"], ["COMP 110", "COMP 110L", "MATH 104"], ["COMP 110", "COMP 110L", "MATH 105"], ["COMP 110", "COMP 110L", "MATH 150A"], ["COMP 110", "COMP 110L", "MATH 255A"]],
+        "corequisite": ["COMP 122L"],
+        "elective": false,
+        "units": 1,
+        "alias:": []
+    },
+    {
+        "name": "COMP 122L",
+        "prerequisites": [],
+        "corequisite": ["COMP 122"],
+        "elective": false,
+        "units": 1,
+        "alias": []
+    }
+]

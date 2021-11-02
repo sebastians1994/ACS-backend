@@ -1,0 +1,18 @@
+[
+    {
+        "name": "COMP 465",
+        "prerequisites": [["COMP 282"]],
+        "corequisite": ["COMP 456L"],
+        "elective": true,
+        "units": 2,
+        "alias:": []
+    },
+    {
+        "name": "COMP 465L",
+        "prerequisites": [],
+        "corequisite": ["COMP 465"],
+        "elective": true,
+        "units": 1,
+        "alias": []
+    }
+]
