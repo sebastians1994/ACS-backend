@@ -1,0 +1,18 @@
+[
+    {
+        "name": "CHEM 102",
+        "prerequisites": [["CHEM 101", "CHEM 101L"]],
+        "corequisite": ["BIOL 102L"],
+        "elective": false,
+        "units": 4,
+        "alias:": []
+    },
+    {
+        "name": "BIOL 102L",
+        "prerequisites": [],
+        "corequisite": ["CHEM 102"],
+        "elective": false,
+        "units": 1,
+        "alias": []
+    }
+]
