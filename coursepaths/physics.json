@@ -1,5 +1,21 @@
 [
     {
+        "name": "PHYS 220A",
+        "prerequisites": [["MATH 150A"], ["MATH 255"]],
+        "corequisite": [],
+        "elective": false,
+        "units": 3,
+        "alias:": []
+    },
+    {
+        "name": "PHYS 220AL",
+        "prerequisites": [["MATH 150A"], ["MATH 255"]],
+        "corequisite": [],
+        "elective": false,
+        "units": 1,
+        "alias:": []
+    },
+    {
         "name": "PHYS 220B",
         "prerequisites": [["PHYS220A", "PHYS220AL", "MATH 150A"], ["PHYS220A", "PHYS220AL", "MATH 255"]],
         "corequisite": [],
