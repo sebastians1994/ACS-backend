@@ -1,82 +1,133 @@
-[
+{
+  "name": "Mathematics",
+  "courses": [
     {
-        "name": "MATH 150A",
-        "prerequisites":  [["MATH 105"], ["MATH 102", "MATH 104"]],
-        "corequisite": [],
-        "elective": false,
-        "units": 5,
-        "alias:": []
+      "name": "MATH 150A",
+      "prerequisites": [
+        [
+          "MATH 105"
+        ],
+        [
+          "MATH 102",
+          "MATH 104"
+        ]
+      ],
+      "corequisite": [],
+      "elective": false,
+      "units": 5,
+      "alias:": []
     },
     {
-        "name": "MATH 150AL",
-        "prerequisites":  [],
-        "corequisite": ["MATH 150A"],
-        "elective": false,
-        "units": 1,
-        "alias:": []
+      "name": "MATH 150AL",
+      "prerequisites": [],
+      "corequisite": [
+        "MATH 150A"
+      ],
+      "elective": false,
+      "units": 1,
+      "alias:": []
     },
     {
-        "name": "MATH 150B",
-        "prerequisites":  [["MATH 150A"]],
-        "corequisite": ["MATH 150B"],
-        "elective": false,
-        "units": 5,
-        "alias:": []
+      "name": "MATH 150B",
+      "prerequisites": [
+        [
+          "MATH 150A"
+        ]
+      ],
+      "corequisite": [
+        "MATH 150B"
+      ],
+      "elective": false,
+      "units": 5,
+      "alias:": []
     },
     {
-        "name": "MATH 150BL",
-        "prerequisites":  [],
-        "corequisite": [],
-        "elective": false,
-        "units": 1,
-        "alias:": []
+      "name": "MATH 150BL",
+      "prerequisites": [],
+      "corequisite": [],
+      "elective": false,
+      "units": 1,
+      "alias:": []
     },
     {
-        "name": "MATH 262",
-        "prerequisites":  [["MATH 150B"]],
-        "corequisite": [],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "MATH 262",
+      "prerequisites": [
+        [
+          "MATH 150B"
+        ]
+      ],
+      "corequisite": [],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "MATH 340",
-        "prerequisites":  [["MATH 150B"]],
-        "corequisite": [],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "MATH 340",
+      "prerequisites": [
+        [
+          "MATH 150B"
+        ]
+      ],
+      "corequisite": [],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "MATH 326",
-        "prerequisites":  [["ECE 320","MATH 150B"], ["PHIL 230","MATH 150B"]],
-        "corequisite": [],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "MATH 326",
+      "prerequisites": [
+        [
+          "ECE 320",
+          "MATH 150B"
+        ],
+        [
+          "PHIL 230",
+          "MATH 150B"
+        ]
+      ],
+      "corequisite": [],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "MATH 341",
-        "prerequisites":  [["MATH 150B"]],
-        "corequisite": [],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "MATH 341",
+      "prerequisites": [
+        [
+          "MATH 150B"
+        ]
+      ],
+      "corequisite": [],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "MATH 481A",
-        "prerequisites": [["COMP 110", "COMP 110L", "MATH 262"]],
-        "corequisite": [],
-        "elective": true,
-        "units": 3,
-        "alias:": []
+      "name": "MATH 481A",
+      "prerequisites": [
+        [
+          "COMP 110",
+          "COMP 110L",
+          "MATH 262"
+        ]
+      ],
+      "corequisite": [],
+      "elective": true,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "MATH 482",
-        "prerequisites":  [["MATH 150B", "MATH 262"]],
-        "corequisite": [],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "MATH 482",
+      "prerequisites": [
+        [
+          "MATH 150B",
+          "MATH 262"
+        ]
+      ],
+      "corequisite": [],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     }
-]
+  ]
+}

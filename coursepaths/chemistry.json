@@ -1,34 +1,54 @@
-[
+{
+  "name": "Chemistry",
+  "courses": [
     {
-        "name": "CHEM 101",
-        "prerequisites": [["CHEM 100"]],
-        "corequisite": ["BIOL 101L"],
-        "elective": false,
-        "units": 4,
-        "alias:": []
+      "name": "CHEM 101",
+      "prerequisites": [
+        [
+          "CHEM 100"
+        ]
+      ],
+      "corequisite": [
+        "BIOL 101L"
+      ],
+      "elective": false,
+      "units": 4,
+      "alias:": []
     },
     {
-        "name": "BIOL 101L",
-        "prerequisites": [],
-        "corequisite": ["CHEM 101"],
-        "elective": false,
-        "units": 1,
-        "alias": []
+      "name": "BIOL 101L",
+      "prerequisites": [],
+      "corequisite": [
+        "CHEM 101"
+      ],
+      "elective": false,
+      "units": 1,
+      "alias": []
     },
     {
-        "name": "CHEM 102",
-        "prerequisites": [["CHEM 101", "CHEM 101L"]],
-        "corequisite": ["BIOL 102L"],
-        "elective": false,
-        "units": 4,
-        "alias:": []
+      "name": "CHEM 102",
+      "prerequisites": [
+        [
+          "CHEM 101",
+          "CHEM 101L"
+        ]
+      ],
+      "corequisite": [
+        "BIOL 102L"
+      ],
+      "elective": false,
+      "units": 4,
+      "alias:": []
     },
     {
-        "name": "BIOL 102L",
-        "prerequisites": [],
-        "corequisite": ["CHEM 102"],
-        "elective": false,
-        "units": 1,
-        "alias": []
+      "name": "BIOL 102L",
+      "prerequisites": [],
+      "corequisite": [
+        "CHEM 102"
+      ],
+      "elective": false,
+      "units": 1,
+      "alias": []
     }
-]
+  ]
+}

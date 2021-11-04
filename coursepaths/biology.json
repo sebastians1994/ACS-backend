@@ -1,34 +1,45 @@
-[
+{
+  "name": "Biology",
+  "courses": [
     {
-        "name": "BIOL 106",
-        "prerequisites": [],
-        "corequisite": ["BIOL 106"],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "BIOL 106",
+      "prerequisites": [],
+      "corequisite": [
+        "BIOL 106"
+      ],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "BIOL 106L",
-        "prerequisites": [],
-        "corequisite": ["BIOL 106"],
-        "elective": false,
-        "units": 1,
-        "alias": []
+      "name": "BIOL 106L",
+      "prerequisites": [],
+      "corequisite": [
+        "BIOL 106"
+      ],
+      "elective": false,
+      "units": 1,
+      "alias": []
     },
     {
-        "name": "BIOL 107",
-        "prerequisites": [],
-        "corequisite": ["BIOL 107L"],
-        "elective": false,
-        "units": 3,
-        "alias:": []
+      "name": "BIOL 107",
+      "prerequisites": [],
+      "corequisite": [
+        "BIOL 107L"
+      ],
+      "elective": false,
+      "units": 3,
+      "alias:": []
     },
     {
-        "name": "BIOL 107L",
-        "prerequisites": [],
-        "corequisite": ["BIOL 107"],
-        "elective": false,
-        "units": 1,
-        "alias": []
+      "name": "BIOL 107L",
+      "prerequisites": [],
+      "corequisite": [
+        "BIOL 107"
+      ],
+      "elective": false,
+      "units": 1,
+      "alias": []
     }
-]
+  ]
+}

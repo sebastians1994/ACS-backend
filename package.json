@@ -1,0 +1,25 @@
+{
+  "name": "acs-backend",
+  "version": "1.0.0",
+  "description": "Backend for Automated Class Schedules",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=*,-express:* & node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammax12/ACS-backend.git"
+  },
+  "author": "Oreki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammax12/ACS-backend/issues"
+  },
+  "homepage": "https://github.com/sammax12/ACS-backend#readme",
+  "dependencies": {
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "express.js": "^1.0.0",
+    "mysql": "^2.18.1"
+  }
+}
