@@ -5,9 +5,6 @@
       "name": "COMP 110",
       "prerequisites": [
         [
-          "Math 105"
-        ],
-        [
           "MATH 102"
         ],
         [

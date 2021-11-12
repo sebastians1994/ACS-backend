@@ -4,6 +4,7 @@ const db = require('./db');
 const express = require('express')
 const fs = require('fs');
 const routes = require('./routes');
+const studentPDFParse = require('./dataparse/dprparse');
 
 const app = express();
 require('./routes')(app);
@@ -30,3 +31,10 @@ function boot(){
 }
 
 boot();
+
+// Example to validate that the parse function works.
+// const pdf = './...' // Add file name not path.
+// studentPDFParse((pdf), (json) =>{
+//   console.log(json);
+// })
+
