@@ -33,8 +33,8 @@ function boot(){
 boot();
 
 // Example to validate that the parse function works.
-// const pdf = './...' // Add file name not path.
-// studentPDFParse((pdf), (json) =>{
-//   console.log(json);
-// })
+const pdf = './My Audit.pdf' // Add file name not path.
+studentPDFParse((pdf), (json) =>{
+  console.log(json);
+})
 
