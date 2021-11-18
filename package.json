@@ -17,10 +17,15 @@
   },
   "homepage": "https://github.com/sammax12/ACS-backend#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "debug": "^4.3.2",
     "dotenv": "^10.0.0",
+    "express": "^4.17.1",
     "express.js": "^1.0.0",
     "mysql": "^2.18.1",
+    "node": "^17.1.0",
+    "nodemon": "^2.0.15",
     "pdf-parse": "^1.1.1"
   }
 }
+
