@@ -5,18 +5,23 @@ const express = require('express')
 const fs = require('fs');
 const routes = require('./routes');
 const studentPDFParse = require('./dataparse/dprparse');
-
+// const checkPrereq = require('./dataparse/checkprereq');
+const checkStudentCSProgress = require('./dataparse/removeclasstaken');
+const path = require('path');
 const app = express();
 require('./routes')(app);
 
 const port = 80;
 
 var courses = {};
+var paths = {};
 
-function boot(){
+function boot() {
   var coursepathsDirectory = fs.readdirSync("./coursepaths");
 
-  for(var cp of coursepathsDirectory){
+  paths = JSON.parse(fs.readFileSync("./paths.json"));
+
+  for (var cp of coursepathsDirectory) {
     var cpData = fs.readFileSync("./coursepaths/" + cp);
     var cpObj = JSON.parse(cpData);
     var courseName = cpObj.name;
@@ -32,9 +37,11 @@ function boot(){
 
 boot();
 
+
 // Example to validate that the parse function works.
-const pdf = './My Audit.pdf' // Add file name not path.
-studentPDFParse((pdf), (json) =>{
-  console.log(json);
-})
+const pdf = './alan.pdf' // Add file name not path.
+studentPDFParse((pdf), (JSON) => {
+  const coursePDF = checkStudentCSProgress(JSON, paths);
+});
+
 
