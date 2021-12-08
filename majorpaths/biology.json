@@ -1,5 +1,6 @@
 {
   "name": "Biology",
+  "aberrations": "BIOL",
   "courses": [
     {
       "name": "BIOL 106",

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sammax12/ACS-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "debug": "^4.3.2",
     "dotenv": "^10.0.0",
     "express-fileupload": "^1.2.1",

@@ -1,5 +1,6 @@
 {
   "name": "Physics",
+  "aberrations": "PHYS",
   "courses": [
     {
       "name": "PHYS 220A",

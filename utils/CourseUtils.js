@@ -31,7 +31,7 @@ function checkStudentProgress(studentJSON) {
     }
 
     var major = "Computer Science";//Take this from PDF in the future
-
+    var currentSemester = "Fall 2022" // curent semster 
     if(majorData[major] == null){
       return;
     }
@@ -55,8 +55,6 @@ function checkStudentProgress(studentJSON) {
     }
     return duplicatePath;
 }
-
-//[["BIOL 106","BIOL 106L","BIOL 107","BIOL 107L",[["CHEM 101","CHEM 101L"],["GEOG 101","GEOG 102"],["GEOG 103","GEOG 105 "],["GEOL 101","GEOL 102"],["GEOL 110","GEOL 112"],["PHYS 220A","PHYS 220AL"]]],["CHEM 101","CHEM 101L","CHEM 102","CHEM 102L",[["BIOL 106","BIOL 106L"],["GEOG 101","GEOG 102"],["GEOG 103","GEOG 105 "],["GEOL 101","GEOL 102"],["GEOL 110","GEOL 112"],["PHYS 220A","PHYS 220AL"]]],["PHYS 220A","PHYS 220AL","PHYS 220B","PHYS 220BL",["BIOL 106","BIOL 106L"],["CHEM 101","CHEM 101L"],["GEOG 101","GEOG 102"],["GEOG 103","GEOG 105"],["GEOL 101","GEOL 102"],["GEOL 110","GEOL 112"]]]
 
 function completed(requirementObj, allStudentCourses) {
     if (typeof requirementObj == "string") {

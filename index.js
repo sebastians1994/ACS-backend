@@ -7,8 +7,10 @@ const routes = require('./routes');
 const CourseUtils = require('./utils/CourseUtils');
 const path = require('path');
 const fileUpload = require('express-fileupload');
+const cors = require('cors')
 const app = express();
 
+app.use(cors());
 app.use(fileUpload({}));
 
 require('./routes')(app);
@@ -21,9 +23,8 @@ function boot() {
     debug(`ACS Backend listening on http://localhost:${port}`)
   });
 
-  const pdf = './andre.pdf' // Add file name not path.
+  const pdf = './My Audit.pdf' // Add file name not path.
   CourseUtils.parseDPR((pdf), (JSON) => {
-
     const neededCourses = CourseUtils.checkStudentProgress(JSON);
     console.log(neededCourses);
   });

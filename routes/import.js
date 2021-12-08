@@ -30,8 +30,12 @@ router.post('/', function(req,res){
 
     let remainingRequirements = CourseUtils.checkStudentProgress(semesterCourses);
 
-    res.json({status: "success", data: remainingRequirements});
+    res.json({status: "success", data:{remainingRequirements: remainingRequirements, majorData: CourseUtils.getMajorData()}, semester: semesterCourses.course});
   });
 });
+
+router.get("/", function(req, res){
+  res.json({status: "success"})
+})
 
 module.exports = router;

@@ -1,5 +1,6 @@
 {
   "name": "Chemistry",
+  "aberrations": "CHEM",
   "courses": [
     {
       "name": "CHEM 101",
