@@ -4,37 +4,30 @@ const db = require('./db');
 const express = require('express')
 const fs = require('fs');
 const routes = require('./routes');
-const studentPDFParse = require('./dataparse/dprparse');
-
+const CourseUtils = require('./utils/CourseUtils');
+const path = require('path');
+const fileUpload = require('express-fileupload');
+const cors = require('cors')
 const app = express();
+
+app.use(cors());
+app.use(fileUpload({}));
+
 require('./routes')(app);
 
 const port = 80;
 
-var courses = {};
-
-function boot(){
-  var coursepathsDirectory = fs.readdirSync("./coursepaths");
-
-  for(var cp of coursepathsDirectory){
-    var cpData = fs.readFileSync("./coursepaths/" + cp);
-    var cpObj = JSON.parse(cpData);
-    var courseName = cpObj.name;
-    courses[courseName] = cpObj.courses;
-  }
-
-  debug("Loaded " + Object.keys(courses).length + " course paths...");
+function boot() {
 
   app.listen(port, () => {
     debug(`ACS Backend listening on http://localhost:${port}`)
   });
+
+  const pdf = './My Audit.pdf' // Add file name not path.
+  CourseUtils.parseDPR((pdf), (JSON) => {
+    const neededCourses = CourseUtils.checkStudentProgress(JSON);
+    console.log(neededCourses);
+  });
 }
 
 boot();
-
-// Example to validate that the parse function works.
-const pdf = './My Audit.pdf' // Add file name not path.
-studentPDFParse((pdf), (json) =>{
-  console.log(json);
-})
-

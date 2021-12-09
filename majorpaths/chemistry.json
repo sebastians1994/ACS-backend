@@ -1,5 +1,6 @@
 {
   "name": "Chemistry",
+  "aberrations": "CHEM",
   "courses": [
     {
       "name": "CHEM 101",
@@ -16,7 +17,7 @@
       "alias:": []
     },
     {
-      "name": "BIOL 101L",
+      "name": "CHEM 101L",
       "prerequisites": [],
       "corequisite": [
         "CHEM 101"
@@ -41,7 +42,7 @@
       "alias:": []
     },
     {
-      "name": "BIOL 102L",
+      "name": "CHEM 102L",
       "prerequisites": [],
       "corequisite": [
         "CHEM 102"

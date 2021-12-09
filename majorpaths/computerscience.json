@@ -1,5 +1,6 @@
 {
   "name": "Computer Science",
+  "aberrations": "COMP",
   "courses": [
     {
       "name": "COMP 110",
@@ -28,7 +29,9 @@
       ],
       "elective": false,
       "units": 3,
-      "alias:": []
+      "alias": [
+        "COMP 196A"
+      ]
     },
     {
       "name": "COMP 110L",
@@ -36,7 +39,9 @@
       "corequisite": [],
       "elective": false,
       "units": 1,
-      "alias": []
+      "alias": [
+        "COMP 196AL"
+      ]
     },
     {
       "name": "COMP 122",
@@ -178,33 +183,6 @@
       "alias": []
     },
     {
-      "name": "COMP 256",
-      "prerequisites": [
-        [
-          "COMP 182",
-          "COMP 182L",
-          "MATH 150A",
-          "PHIL 230"
-        ]
-      ],
-      "corequisite": [
-        "COMP 256L"
-      ],
-      "elective": false,
-      "units": 3,
-      "alias:": []
-    },
-    {
-      "name": "COMP 256L",
-      "prerequisites": [],
-      "corequisite": [
-        "COMP 256L"
-      ],
-      "elective": false,
-      "units": 1,
-      "alias": []
-    },
-    {
       "name": "COMP 282",
       "prerequisites": [
         [
@@ -289,16 +267,6 @@
       "elective": false,
       "units": 2,
       "alias:": []
-    },
-    {
-      "name": "COMP 380",
-      "prerequisites": [],
-      "corequisite": [
-        "COMP 380"
-      ],
-      "elective": false,
-      "units": 1,
-      "alias": []
     },
     {
       "name": "COMP 410",
@@ -868,5 +836,205 @@
       "units": 3,
       "alias:": []
     }
-  ]
+  ],
+  "path": {
+    "Lower Division Required Courses": [
+      "COMP 122",
+      "COMP 122L",
+      "COMP 182",
+      "COMP 182L",
+      "COMP 222",
+      "COMP 282",
+      "MATH 150A",
+      "MATH 150B",
+      "MATH 262",
+      "PHIL 230",
+      [
+        [
+          "COMP 196AA",
+          "COMP 196AAL",
+          "COMP 196AB",
+          "COMP 196ABL"
+        ],
+        [
+          "COMP 110",
+          "COMP 110L"
+        ],
+        [
+          "COMP 111A",
+          "COMP 111AL",
+          "COMP 111B",
+          "COMP 111BL"
+        ]
+      ],
+      [
+        [
+          "COMP 256",
+          "COMP 256L"
+        ],
+        [
+          "MATH 326"
+        ]
+      ]
+    ],
+    "Lower Division Electives": [
+      [
+        [
+          "BIOL 106",
+          "BIOL 106L",
+          "BIOL 107",
+          "BIOL 107L",
+          [
+            [
+              "CHEM 101",
+              "CHEM 101L"
+            ],
+            [
+              "GEOG 101",
+              "GEOG 102"
+            ],
+            [
+              "GEOG 103",
+              "GEOG 105 "
+            ],
+            [
+              "GEOL 101",
+              "GEOL 102"
+            ],
+            [
+              "GEOL 110",
+              "GEOL 112"
+            ],
+            [
+              "PHYS 220A",
+              "PHYS 220AL"
+            ]
+          ]
+        ],
+        [
+          "CHEM 101",
+          "CHEM 101L",
+          "CHEM 102",
+          "CHEM 102L",
+          [
+            [
+              "BIOL 106",
+              "BIOL 106L"
+            ],
+            [
+              "GEOG 101",
+              "GEOG 102"
+            ],
+            [
+              "GEOG 103",
+              "GEOG 105 "
+            ],
+            [
+              "GEOL 101",
+              "GEOL 102"
+            ],
+            [
+              "GEOL 110",
+              "GEOL 112"
+            ],
+            [
+              "PHYS 220A",
+              "PHYS 220AL"
+            ]
+          ]
+        ],
+        [
+          "PHYS 220A",
+          "PHYS 220AL",
+          "PHYS 220B",
+          "PHYS 220BL",
+          [
+            [
+              "BIOL 106",
+              "BIOL 106L"
+            ],
+            [
+              "CHEM 101",
+              "CHEM 101L"
+            ],
+            [
+              "GEOG 101",
+              "GEOG 102"
+            ],
+            [
+              "GEOG 103",
+              "GEOG 105"
+            ],
+            [
+              "GEOL 101",
+              "GEOL 102"
+            ],
+            [
+              "GEOL 110",
+              "GEOL 112"
+            ]
+          ]
+        ]
+      ]
+    ],
+    "Upper Division Required Courses": [
+      "COMP 310",
+      "COMP 322",
+      "COMP 322L",
+      "COMP 333",
+      "COMP 380",
+      "COMP 380L",
+      [
+        [
+          "MATH 482"
+        ],
+        [
+          "COMP 482"
+        ]
+      ],
+      "COMP 490",
+      "COMP 490L",
+      "COMP 491L",
+      [
+        [
+          "MATH 340"
+        ],
+        [
+          "MATH 341"
+        ]
+      ]
+    ],
+    "Upper Division Electives": [
+        "COMP 410",
+        "COMP 424",
+        "COMP 429",
+        "COMP 430",
+        "COMP 440",
+        "COMP 442",
+        "COMP 465",
+        "COMP 465L",
+        "COMP 467",
+        "COMP 469",
+        "COMP 484",
+        "COMP 484L",
+        "COMP 485",
+        "COMP 492",
+        "COMP 522",
+        "COMP 528",
+        "COMP 528L",
+        "COMP 539",
+        "COMP 541",
+        "COMP 542",
+        "COMP 560",
+        "COMP 565",
+        "COMP 581",
+        "COMP 582",
+        "COMP 583",
+        "COMP 584",
+        "COMP 585",
+        "COMP 586",
+        "COMP 587",
+        "COMP 589"
+    ]
+  }
 }
